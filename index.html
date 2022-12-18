@@ -1,0 +1,490 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Ikuro Kang’ethe Portfolio</title>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery.min.js"></script>
+<!---- start-smoth-scrolling---->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+		<!---- start-smoth-scrolling---->
+		 <!-- Custom Theme files -->
+		<link href="css/theme-style.css" rel='stylesheet' type='text/css' />
+   		 <!-- Custom Theme files -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+		</script>
+		<!----webfonts---->
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+		<!----//webfonts---->
+		<!----start-top-nav-script---->
+		<script>
+			$(function() {
+				var pull 		= $('#pull');
+					menu 		= $('nav ul');
+					menuHeight	= menu.height();
+				$(pull).on('click', function(e) {
+					e.preventDefault();
+					menu.slideToggle();
+				});
+				$(window).resize(function(){
+	        		var w = $(window).width();
+	        		if(w > 320 && menu.is(':hidden')) {
+	        			menu.removeAttr('style');
+	        		}
+	    		});
+			});
+		</script>
+		<!----//End-top-nav-script---->
+</head>
+	<body>
+		<!-----start-container----->
+			<!----- start-header---->
+			<div id="home" class="header">
+				<div class="container">
+					<div class="logo">
+						<a href="#"><h1>Ikuro Kang’ethe</h1> </a>
+					</div>
+					<!----start-top-nav---->
+					 <nav class="top-nav">
+						<ul class="top-nav">
+							<li class="active"><a href="#home" class="scroll">Home <span> </span></a></li>
+							<li class="page-scroll"><a href="#ser" class="scroll">Work history <span> </span></a></li>
+							<li class="page-scroll"><a href="#about" class="scroll">About Me <span> </span></a></li>
+							<li class="page-scroll"><a href="#port" class="scroll">Portfolio <span> </span></a></li>
+							<li class="contatct-active" class="page-scroll"><a href="#contact" class="scroll">Contact Me </a></li>
+						</ul>
+						<a href="#" id="pull"><img src="images/nav-icon.png" title="menu" /></a>
+					</nav>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+			<!----- //End-header---->
+			<!----- start-slider---->
+			<!----start-slider-script---->
+			<script src="js/responsiveslides.min.js"></script>
+			 <script>
+			    // You can also use "$(window).load(function() {"
+			    $(function () {
+			      // Slideshow 4
+			      $("#slider4").responsiveSlides({
+			        auto: true,
+			        pager: true,
+			        nav: true,
+			        speed: 500,
+			        namespace: "callbacks",
+			        before: function () {
+			          $('.events').append("<li>before event fired.</li>");
+			        },
+			        after: function () {
+			          $('.events').append("<li>after event fired.</li>");
+			        }
+			      });
+			
+			    });
+			  </script>
+			<!----//End-slider-script---->
+			<!-- Slideshow 4 -->
+			    <div  id="top" class="callbacks_container">
+			      <ul class="rslides" id="slider4">
+			        <li>
+			          <img src="images/slide.jpg" alt="">
+			          <div class="caption text-center">
+			          	<div class="slide-text-info">
+			          		<a class="btn1" href="#"><span>I am Ikuro Kang'ethe</span></a>
+			          		<h1>An Urban <span>Planner</span> </h1>
+			          		<div class="slide-text">
+								<p>Highly capable, well adaptable to change, in and around the work place. Adept to technology and the highly interconnected world. Extensive experience in the built environment and related fields. Outgoing, and ready to learn and acquire new skills. </p>
+
+			          		</div>
+			          	</div>
+			          </div>
+			        </li>
+			        <li>
+			          <img src="images/slide.jpg" alt="">
+			          <div class="caption text-center">
+			          	<div class="slide-text-info">
+			          		<a class="btn1" href="#"><span>I am Ikuro Kang'ethe</span></a>
+			          		<h1>A GIS  <span> Expert </span> </h1>
+			          		<div class="slide-text">
+								<p>Highly capable individual, well adaptable to change, in and around the work place. Adept to technology and the highly interconnected world. Extensive experience in the built environment and related fields. Outgoing, and ready to learn and acquire new skills. </p>
+
+			          		</div>
+			          	</div>
+			          </div>
+			        </li>
+			        <li>
+			          <img src="images/slide.jpg" alt="">
+			           <div class="caption text-center">
+			           	<div class="slide-text-info">
+			          		<a class="btn1" href="#"><span>I am Ikuro Kang'ethe</span></a>
+			          		<h1>A Strategy and <span>development</span> Advisor</h1>
+			          		<div class="slide-text">
+			          			<p>Highly capable individual, well adaptable to change, in and around the work place. Adept to technology and the highly interconnected world. Extensive experience in the built environment and related fields. Outgoing, and ready to learn and acquire new skills. </p>
+			          		</div>
+			          	</div>
+			          </div>
+			        </li>
+			      </ul>
+			    </div>
+			    <div class="clearfix"> </div>
+			<!----- //End-slider---->
+			<!----start-services---->
+			<div id="ser" class="services">
+				<div class="container">
+					<div class="services-head text-center">
+						<h3>Work History</h3>
+						<p>The following is my work history. These items are a mix of current and previous jobs.</p>
+					</div>
+					<!-----start-services-grids---->
+					<div class="services-grids">
+						<div class="col-md-4 services-grid">
+							<div class="col-md-3 services-grid-left">
+								<a class="top-icon1" href="#"><span> </span></a>
+							</div>
+							<div class="col-md-9 services-grid-right">
+								<h4><a href="#">Swedish Medical Center</a></h4>
+								<p>Key Roles: 
+									<ul>
+										<li>
+											Receiving medical supplies.
+										</li>
+										<li>
+											Dispatching hospital supplies to various hospital departments
+										</li>
+									</ul>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+						<div class="col-md-4 services-grid">
+							<div class="col-md-3 services-grid-left">
+								<a class="top-icon2" href="#"><span> </span></a>
+							</div>
+							<div class="col-md-9 services-grid-right">
+								<h4><a href="#">Swissport</a></h4>
+								<p>Key Roles:
+									<ul>
+										<li>
+											Ensuring aircraft fuel is ready before takeoff.
+											<li>
+											Filling up fuel trucks and delivering fuel to the aircraft. 
+											</li>
+											<li>
+											 Perform defueling when deemed necessary.
+											</li>
+									</ul>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+						<div class="col-md-4 services-grid">
+							<div class="col-md-3 services-grid-left">
+								<a class="top-icon3" href="#"><span> </span></a>
+							</div>
+							<div class="col-md-9 services-grid-right">
+								<h4><a href="#">Amazon fulfillment center</a></h4>
+								<p> Key Roles:
+									<ul>
+										<li>
+											Receiving truck full of orders and preparing them for delivery. 
+										</li>
+										<li>
+											Staging deliveries for pick up by drivers.
+										</li>
+										<li>
+											Working with heavy machinery such as, turret trucks, stand up forklifts and mobile carts.</p>
+										</li>
+									</ul>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+						<div class="col-md-4 services-grid">
+							<div class="col-md-3 services-grid-left">
+								<a class="top-icon4" href="#"><span> </span></a>
+							</div>
+							<div class="col-md-9 services-grid-right">
+								<h4><a href="#">Kiambu County Ministry of Lands, Housing & Physical Planning. </a></h4>
+								<p>Key Roles:
+									<ul>
+										<li>
+											Digitizing the County’s physical Development plans. The Digitizing Process involved use of state-of-the-art technology and employing heads-up/on-screen digitization. (Scanning of hardcopy topographical, topo cadastral, FR and RIM maps and images).</p>
+										</li>
+										<li>
+											Preparation of Kiambu County Integrated spatial plan.
+										</li>
+										<li>
+											Preparation of Physical development plans for markets within Kiambu county.
+										</li>
+										<li>
+											Participating monthly in the County Technical Planning Committee to facilitate approval of submitted development applications. 
+										</li>
+										<li>
+											Vetting proposed development applications i.e. (architectural plans, change of use briefs, subdivisions schemes & renewal of leases)
+										</li>
+									</ul>
+								</div>
+							<div class="clearfix"> </div>
+						</div>
+						<div class="col-md-4 services-grid">
+							<div class="col-md-3 services-grid-left">
+								<a class="top-icon5" href="#"><span> </span></a>
+							</div>
+							<div class="col-md-9 services-grid-right">
+								<h4><a href="#">Attaché at the Department of resource surveys and remote sensing (DRSRS)</a></h4>
+								<p>key roles:</p>
+								<ul>
+									<li>
+										Laboratory Mapping with Ministry of health project: GPS data collection and analysis with I-map international.</p>
+									</li>
+									<li>
+										Urban design applications: field survey, data analysis, development applications report writing, modeling of existing situation and proposed ideal design and presentation of reports using power point.
+									</li>
+									<li>
+										Creating and maintenance of datasets.
+									</li>
+									<li>
+										Digital image, processing, analysis and interpretation.
+									</li>
+									<li>
+										Spatial database development.
+									</li>
+									<li>
+										Carrying out land survey and other related field data collection activities.
+									</li>
+									<li>
+										Mapping, ground controls, digitizing and geodatabase creation.	
+									</li>
+								</ul>						
+								</div>
+							<div class="clearfix"> </div>
+						</div>
+						<div class="col-md-4 services-grid">
+							<div class="col-md-3 services-grid-left">
+								<a class="top-icon6" href="#"><span> </span></a>
+							</div>
+							<div class="col-md-9 services-grid-right">
+								<h4><a href="#">Real Plan Consultants</a></h4>
+								<p>Key roles:</p>
+								<ul>
+									<li>
+										Developing graphic database structures, tables, forms, and reports.
+									</li>
+									<li>
+										Image and Data Processing Software such as ENVI, IDRISI, Erdas and Surveying
+									</li>
+									<li>
+										Computer Assisted Design and Cartography and Computing Skills used in identifying landowners, Entering documented land transactions and related
+									</li>
+									<li>
+										Working cooperatively with GIS staff and /or Project Managers to complete assigned work
+									</li>
+								</ul>
+							<div class="clearfix"> </div>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+			</div>
+			<!----//End-services---->
+					<!-----//End-services-grids---->
+					<!---- start-about----->
+					<div id="about" class="about">
+						<div class="container">
+							<div class="about-head">
+								<h4>About me</h4>
+								<p>Originally from Kenya.</p>
+							</div>
+								<!----- start-about-grids----->
+								<div class="about-grids">
+									<div class="col-md-7 about-grid-left">
+										 <img src="images/gis.png" alt="">
+										
+									</div>
+									<div class="col-md-5 about-grid-right">
+										<h5>Education.</h5>
+										<p>I have a 2nd Class Honors B.A in Urban and Regional Planning from The University of Nairobi University.</p>
+										<p>I am also currently pursuing a Masters in Geospatial Technologies from The University of Washington.</p>
+										<h6>Skills and what I do. </h6>
+										<p>I  a diverse background with experience in a variety of fields, including spatial planning, policy development, and strategy development. </p>
+										<p>I also have experience with GIS software and spatial analysis, as well as working in the healthcare and logistics industries.</p>
+										<p>I have strong skills in planning, organization, and execution, as well as the ability to work with a range of stakeholders. </p>
+										<p>Overall, my skills and experience make me well-suited for roles in planning, strategy development, and analysis, particularly in the built environment or in organizations that rely on GIS tools and spatial data.</p>
+										<a class="about-btn" href="https://www.linkedin.com/in/george-ikuro-778836ba/">view My LinkedIN</a>
+									</div>
+									<div class="clearfix"> </div>
+								</div>
+								<!----- //End-about-grids----->
+							</div>
+						</div>
+		<!---- //End-about----->
+		<!-----start-portfolio---->
+		<div id="port" class="portfolio-box-main">
+			<div class="container">
+				<div class="portfolio-head text-center">
+					<h3>Portfolio</h3>
+					<span>The work I have done so far. This includes my personal projects.</span>
+				</div>
+			</div>
+			<!----start-portfolio----->
+		<div class="portfolio portfolio-box">
+			<!----start-portfolio---->
+         <div  class="portfolio-main">
+	        	<!---- start-portfolio-script----->
+					<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+					<script type="text/javascript">
+						$(function () {
+							var filterList = {
+								init: function () {
+								
+									// MixItUp plugin
+									// http://mixitup.io
+									$('#portfoliolist').mixitup({
+										targetSelector: '.portfolio',
+										filterSelector: '.filter',
+										effects: ['fade'],
+										easing: 'snap',
+										// call the hover effect
+										onMixEnd: filterList.hoverEffect()
+									});				
+								
+								},
+								hoverEffect: function () {
+									// Simple parallax effect
+									$('#portfoliolist .portfolio').hover(
+										function () {
+											$(this).find('.label').stop().animate({bottom: 0}, 200, 'easeOutQuad');
+											$(this).find('img').stop().animate({top: -30}, 500, 'easeOutQuad');				
+										},
+										function () {
+											$(this).find('.label').stop().animate({bottom: -40}, 200, 'easeInQuad');
+											$(this).find('img').stop().animate({top: 0}, 300, 'easeOutQuad');								
+										}		
+									);				
+								
+								}
+					
+							};
+							filterList.init();
+						});	
+					</script>
+
+					<div id="portfoliolist">
+					<div class="portfolio logo1 mix_all" data-cat="logo" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a data-toggle="modal" data-target=".bs-example-modal-md" href="https://ikuro-k.github.io/FINAL-PROJECT/" class="b-link-stripe b-animate-go  thickbox">
+						     <img class="p-img" src="images/p1.jpg" /><div class="b-wrapper">
+						     	<h2 class="b-animate b-from-left    b-delay03 ">
+						     		<div class="animate-head">
+						     			<div class="animate-head-left">
+						     				<h3>GIS Project</h3>
+						     				<span>Using mapbox. </span>
+						     			</div>
+						     			<div class="animate-head-right">
+						     				<span><i class="fa fa-search-plus"> </i></span>
+						     			</div>
+						     			<div class="clearfix"> </div>
+						     		</div>
+						     	</h2>
+						  	</div></a>
+		                </div>
+					</div>				
+					<div class="portfolio logo1 mix_all" data-cat="logo" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a data-toggle="modal" data-target=".bs-example-modal-md" href=" https://ikuro-k.github.io/LAB-5/" class="b-link-stripe b-animate-go  thickbox">
+						     <img class="p-img" src="images/bikes.png" /><div class="b-wrapper">
+						     	<h2 class="b-animate b-from-left    b-delay03 ">
+						     		<div class="animate-head">
+						     			<div class="animate-head-left">
+						     				<h3>LAB PROJECT</h3>
+						     				<span>Using mapbox. </span>
+						     			</div>
+						     			<div class="animate-head-right">
+						     				<span><i class="fa fa-search-plus"> </i></span>
+						     			</div>
+						     			<div class="clearfix"> </div>
+						     		</div>
+						     	</h2>
+						  	</div></a>
+		                </div>
+					</div>			
+					<div class="portfolio logo1 mix_all" data-cat="logo" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a data-toggle="modal" data-target=".bs-example-modal-md" href=" https://ikuro-k.github.io/LAB-6/" class="b-link-stripe b-animate-go  thickbox">
+						     <img class="p-img" src="images/3djl.png" /><div class="b-wrapper">
+						     	<h2 class="b-animate b-from-left    b-delay03 ">
+						     		<div class="animate-head">
+						     			<div class="animate-head-left">
+						     				<h3>LAB PROJECT</h3>
+						     				<span>Using mapbox. </span>
+						     			</div>
+						     			<div class="animate-head-right">
+						     				<span><i class="fa fa-search-plus"> </i></span>
+						     			</div>
+						     			<div class="clearfix"> </div>
+						     		</div>
+						     	</h2>
+						  	</div></a>
+		                </div>
+					</div>			
+					<div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a data-toggle="modal" data-target=".bs-example-modal-md" href="https://ikuro-k.github.io/Travel-101/" class="b-link-stripe b-animate-go  thickbox">
+						     <img class="p-img" src="images/p2.jpg" /><div class="b-wrapper">
+						     	<h2 class="b-animate b-from-left    b-delay03 ">
+						     		<div class="animate-head">
+						     			<div class="animate-head-left">
+						     				<h3>Travel Blog</h3>
+						     				<span>Documenting my trip from Kenya to Kigali</span>
+						     			</div>
+						     			<div class="animate-head-right">
+						     				<span><i class="fa fa-search-plus"> </i></span>
+						     			</div>
+						     			<div class="clearfix"> </div>
+						     		</div>
+						     	</h2>
+						  	</div></a>
+		                </div>
+					</div>		
+					
+					<div class="clearfix"> </div>	
+					<a class="more-ports text-center" href="#"><span> </span></a>																																				
+				</div>
+		</div>
+		</div>
+		<div class="clearfix"> </div>
+		</div>
+		<br>
+         <!----start-contact---->
+         <div id="contact" class="contact">
+         	<div class="container">
+         		<div class="contact-head text-center">
+         			<h3>Contact me</h3>
+         			
+         		<div class="contact-grids">
+         			<div class="contact-right">
+         				<h4>Contact info</h4><br />
+         				<p><span class="icon1"> </span><a href="#">gi.mambo.gm@gmail.com</a></p><br />
+         				<p><span class="icon2"> </span>804-546-0520</p><br />
+         				<p><span class="icon3"> </span><label>10710 SE 256TH ST, KENT, WA</label></p><br />
+         				<h4>Follow me on</h4><br />
+         				<ul class="list-unstyled list-inline">
+         					<li><a class="twitt" href="https://twitter.com/gi_mambo"><span> </span></a></li>
+         					<li><a class="sanp" href="https://www.instagram.com/mambo_gee/"><span> </span></a></li>
+         				</ul>
+         			</div>
+         			<div class="clearfix"> </div>
+         		</div>
+         	</div>
+         </div>
+
+	</body>
+</html>
+
